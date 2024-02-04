@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/edtAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/edtState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="State"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="ADD"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btnAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Print all" />
+
+        <Button
+            android:id="@+id/btnActive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filter 1" />
+
+        <Button
+            android:id="@+id/btnNonActive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filter 0" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvUser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/lv_item"/>
+</LinearLayout>
